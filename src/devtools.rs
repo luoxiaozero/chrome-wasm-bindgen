@@ -68,7 +68,11 @@ extern "C" {
     #[doc = "Parameter result: The result of evaluation."]
     #[doc = ""]
     #[doc = "Parameter exceptionInfo: An object providing details if an exception occurred while evaluating the expression."]
-    pub fn eval_with_expression_and_options_and_callback(this: &InspectedWindow, options: JsValue, callback: js_sys::Function);
+    pub fn eval_with_expression_and_options_and_callback(
+        this: &InspectedWindow,
+        options: JsValue,
+        callback: js_sys::Function,
+    );
 
     #[wasm_bindgen(method, js_name = getResources)]
     #[doc = "Retrieves the list of resources from the inspected page."]

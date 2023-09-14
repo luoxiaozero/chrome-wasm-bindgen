@@ -1,12 +1,18 @@
 [package]
 name = "chrome-wasm-bindgen"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
+
+description = "chrome wasm bindgen"
+license = "MIT"
+homepage = "https://github.com/luoxiaozero/chrome-wasm-bindgen"
+repository = "https://github.com/luoxiaozero/chrome-wasm-bindgen"
+authors = ["luoxiaozero <luoxiaozero@163.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 wasm-bindgen = "0.2.87"
 js-sys = "0.3.64"
-serde = { version = "1.0", features = ["derive"] }
-serde-wasm-bindgen = "0.4"
+serde = { version = "1.0.188", features = ["derive"] }
+serde-wasm-bindgen = "0.6.0"
